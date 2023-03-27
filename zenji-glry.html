@@ -47,5 +47,20 @@
       />
       <img src="zenji photos/pexels-john-goren-1605285.jpg" alt="" />
     </div>
+    <div id="modal">
+      <div class="modal-content">
+           <h1></h1>
+  
+          <p>hi im bahaa welcome to my gallery</p>
+          <button id="button">Close</button>
+      </div>
+  </div>
+    <script>
+      window.onload = function () {
+      document.getElementById('button').onclick = () => {
+          document.getElementById('modal').style.display = "none"
+      };
+  };
+    </script>
   </body>
 </html>
