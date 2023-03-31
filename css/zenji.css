@@ -1,3 +1,4 @@
+
 body {
 	margin: 0 4rem;
 	padding: 1rem;
@@ -5,8 +6,23 @@ body {
 	border-left: 0.25rem solid whitesmoke;
 	box-shadow: 0px 0px 40px  rgb(119, 118, 118);;
 	background-color: rgb(34, 33, 33);
-
+	overflow: visible;
 }
+body::-webkit-scrollbar{
+	width: 0.7em;
+}
+body::-webkit-scrollbar-thumb{
+	background-color: aliceblue;
+	border-radius: 5px;}
+body::-webkit-scrollbar-thumb:hover{
+	background-color: greenyellow;
+}
+body::-webkit-scrollbar-track {
+		background-color: #131212;
+		border-radius: 10px;
+	  }
+
+
 
 header .title{
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -19,9 +35,9 @@ header .title:hover{
 	transform: scale(1.1);
 	color:#000;
 }
+
 .image-grid {	
 	--row-height: 20em;
-
 	--gap: 16px;
 	--num-cols: 4;
 
@@ -54,6 +70,13 @@ header .title:hover{
 .image-grid-row-2 {
 	grid-row: span 2;
 }
+.image-grid-col-3{
+	grid-column:span 3;
+}
+.image-grid-row-3{
+	grid-row: span3;
+}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -63,9 +86,8 @@ header .title:hover{
 	}
 }
 
-
 #modal {
-	position: fixed;
+	position: fixed ;
 	font-family: Arial, Helvetica, sans-serif;
 	top: 0;
 	left: 0;
@@ -73,14 +95,19 @@ header .title:hover{
 	z-index: 1;
 	height: 100%;
 	width: 100%;
+	
   }
   /* what is inside the modal */
   .modal-content { 
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	background: #fff;
-	width: 50%;
+	width: 30%;
 	padding: 20px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	border-radius: 5em;
+	box-shadow: 0 0 10px white;
+	background: #fff;
+	font-size: 1.3em;
   }

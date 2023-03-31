@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Image Grid Gallery with HTML & CSS</title>
+    <link rel = "icon" href = "zenji photos/icons8-camera-50.png" 
+        type = "image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/zenji.css" />
   </head>
   <body>
@@ -49,18 +56,17 @@
     </div>
     <div id="modal">
       <div class="modal-content">
-           <h1></h1>
-  
-          <p>hi im bahaa welcome to my gallery</p>
-          <button id="button">Close</button>
+        <p>Hi guys im Bahaa, welcome to my gallery. <i class="fa fa-camera-retro fa-lg"></i></p> 
+      
+        <button id="button">Close</button>
       </div>
-  </div>
+    </div>
     <script>
       window.onload = function () {
-      document.getElementById('button').onclick = () => {
-          document.getElementById('modal').style.display = "none"
+        document.getElementById("button").onclick = () => {
+          document.getElementById("modal").style.display = "none";
+        };
       };
-  };
     </script>
   </body>
 </html>
